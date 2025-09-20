@@ -1,0 +1,120 @@
+/* Full-screen background */
+.form-container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* deep blue gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Glassmorphism card */
+.form-container form.card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Logo styling */
+.form-container form.card img {
+  margin-bottom: 20px;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Form group spacing */
+.form-container form.card .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Label styling */
+.form-container form.card label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Input styling */
+.form-container form.card input {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Placeholder color */
+.form-container form.card input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Input focus style */
+.form-container form.card input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 8px 2px #ffc107;
+  color: #000;
+}
+
+/* Button and link container */
+.form-container form.card .d-flex {
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Button styling */
+.form-container form.card .btn-primary {
+  background-color: #ffc107;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.form-container form.card .btn-primary:hover {
+  background-color: #e0a800;
+}
+
+/* Link styling */
+.form-container form.card a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.form-container form.card a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Logo styling */
+.form-container form.card img {
+  display: block;      /* Make image a block element */
+  margin: 0 auto 20px; /* Center horizontally, add bottom margin */
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  margin-left: 134px;
+}
+
+
+
+
+

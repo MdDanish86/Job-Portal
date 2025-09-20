@@ -1,0 +1,125 @@
+/* Full-screen background */
+.form-container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* deep blue gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* Glassmorphism card */
+.register-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Logo styling */
+.register-card img {
+  margin-bottom: 20px;
+  margin-left: 36px;
+}
+
+/* Form spacing */
+.register-card .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Label styling */
+.register-card label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Input styling */
+.register-card input {
+  width: 100%;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.12); /* subtle transparent white bg */
+  color: #fff; /* white text */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Placeholder color */
+.register-card input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Input focus style */
+.register-card input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 8px 2px #ffc107;
+  color: #000; /* input text black on focus for readability */
+}
+
+/* Link and button row */
+.register-card .d-flex {
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Button styling */
+.register-card .btn-primary {
+  background-color: #ffc107;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.register-card .btn-primary:hover {
+  background-color: #e0a800;
+}
+
+/* Link styling */
+.register-card a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.register-card a:hover {
+  text-decoration: underline;
+}
+
+/* Logo image styling */
+.register-logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+
+
+
+
+.register-logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000; /* keep it on top */
+}
+
+.register-logo-container img {
+  height: 60px;
+  object-fit: contain;
+}
