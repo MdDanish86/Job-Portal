@@ -1,5 +1,20 @@
 import userModel from "../models/userModel.js";
 
+
+
+
+
+// ✅ Correct named exports:
+export function getUserProfile(req, res) {
+  // implementation
+}
+
+export function updateUserProfile(req, res) {
+  // implementation
+}
+
+
+
 export const updateUserController = async (req, res, next) => {
     const { name, email, lastName, location } = req.body
     if (!name || !email || !lastName || !location) {
@@ -46,3 +61,8 @@ export const getUserController = async (req, res, next) => {
         })
     }
 };
+
+
+
+
+

@@ -1,0 +1,12 @@
+// ✅ GET LATEST JOBS FOR PUBLIC DASHBOARD
+export const getLatestJobsController = async (req, res) => {
+  try {
+    const jobs = await jobsModel.find({})
+      .sort({ createdAt: -1 })
+      .limit(10); // return only latest 10 jobs
+
+    res.status(200).json({ success: true, jobs });
+  } catch (error) {
+    res.status(500).json({ success: false, message: 'Failed to fetch latest jobs', error: error.message });
+  }
+};
